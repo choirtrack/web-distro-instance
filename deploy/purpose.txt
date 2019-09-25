@@ -1,0 +1,4 @@
+Put deploynotes in this folder (not this file)
+Number the step of each note so that they can be followed in the correct order
+When deployment is complete, delete the deploy notes and add this as a git commit to the repo. By doing this, the deploy notes are retained in the git history, but they are not visible in the latest code which avoids uncertainty as to whether they were deployed or note.
+By having deploy notes stored in git alongside the code, we version control both together, so that troubleshooting in future can be assisted by this, rather than, say, put in a separate documentation system that might not be availale in future. Moreover it's more convenient to share the whole project with docs in one git repo.

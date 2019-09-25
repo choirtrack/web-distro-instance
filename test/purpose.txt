@@ -1,0 +1,2 @@
+Automated test scripts here
+and manual steps 

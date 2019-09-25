@@ -1,0 +1,3 @@
+Capture terminal logs when setting up - as a quick way to document steps for others.
+
+So that they will know why it "works for me!" and not have a table-flip moment.
