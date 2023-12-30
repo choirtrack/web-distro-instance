@@ -1,0 +1,4 @@
+mode: simple
+ignored_config_entities:
+  - 'system.site:mail'
+  - 'update.settings:emails'
