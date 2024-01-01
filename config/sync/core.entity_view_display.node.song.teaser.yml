@@ -1,0 +1,43 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.song.field_alto_recordings
+    - field.field.node.song.field_bass_recordings
+    - field.field.node.song.field_folder_link
+    - field.field.node.song.field_lyrics_link
+    - field.field.node.song.field_melody_links
+    - field.field.node.song.field_rehearsal_video
+    - field.field.node.song.field_score_links
+    - field.field.node.song.field_solos_notes
+    - field.field.node.song.field_soprano_recordings
+    - field.field.node.song.field_spotify_link
+    - field.field.node.song.field_tenor_recordings
+    - field.field.node.song.field_youtube_link
+    - node.type.song
+  module:
+    - user
+id: node.song.teaser
+targetEntityType: node
+bundle: song
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_alto_recordings: true
+  field_bass_recordings: true
+  field_folder_link: true
+  field_lyrics_link: true
+  field_melody_links: true
+  field_rehearsal_video: true
+  field_score_links: true
+  field_solos_notes: true
+  field_soprano_recordings: true
+  field_spotify_link: true
+  field_tenor_recordings: true
+  field_youtube_link: true
