@@ -1,0 +1,27 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.set_list.field_item
+    - node.type.set_list
+  module:
+    - user
+id: node.set_list.default
+targetEntityType: node
+bundle: set_list
+mode: default
+content:
+  field_item:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }
