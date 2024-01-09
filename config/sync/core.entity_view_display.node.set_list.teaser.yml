@@ -1,0 +1,21 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.set_list.field_item
+    - node.type.set_list
+  module:
+    - user
+id: node.set_list.teaser
+targetEntityType: node
+bundle: set_list
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_item: true

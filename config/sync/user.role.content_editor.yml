@@ -15,6 +15,7 @@ dependencies:
     - taxonomy
     - toolbar
     - tour
+    - views_ui
 id: content_editor
 label: 'Content editor'
 weight: 2
@@ -27,6 +28,7 @@ permissions:
   - 'access toolbar'
   - 'access tour'
   - 'administer url aliases'
+  - 'administer views'
   - 'create article content'
   - 'create page content'
   - 'create terms in tags'
