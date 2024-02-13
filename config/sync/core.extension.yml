@@ -12,7 +12,6 @@ module:
   contextual: 0
   datetime: 0
   dblog: 0
-  draggableviews: 0
   dynamic_page_cache: 0
   editor: 0
   field: 0
@@ -31,6 +30,7 @@ module:
   page_cache: 0
   path: 0
   path_alias: 0
+  quick_node_clone: 0
   search: 0
   shortcut: 0
   smtp: 0
@@ -47,4 +47,5 @@ module:
 theme:
   olivero: 0
   claro: 0
+  gin: 0
 profile: standard
