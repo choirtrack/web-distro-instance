@@ -1,12 +1,14 @@
 langcode: en
 status: true
 dependencies:
+  module:
+    - user
   theme:
     - gin
 id: gin_local_actions
 theme: gin
 region: content
-weight: -10
+weight: -4
 provider: null
 plugin: local_actions_block
 settings:
@@ -14,4 +16,11 @@ settings:
   label: 'Primary admin actions'
   label_display: '0'
   provider: core
-visibility: {  }
+visibility:
+  user_role:
+    id: user_role
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    roles:
+      administrator: administrator

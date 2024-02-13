@@ -2,9 +2,9 @@ langcode: en
 mail: null
 slogan: ''
 page:
-  403: ''
+  403: /user/login
   404: ''
-  front: /user/login
+  front: /node/48
 admin_compact_mode: false
 weight_select_max: 100
 default_langcode: en

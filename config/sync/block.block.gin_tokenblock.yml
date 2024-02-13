@@ -1,0 +1,22 @@
+langcode: en
+status: false
+dependencies:
+  module:
+    - token_block
+  theme:
+    - gin
+id: gin_tokenblock
+theme: gin
+region: content
+weight: -2
+provider: null
+plugin: token_block
+settings:
+  id: token_block
+  label: 'Token Block'
+  label_display: visible
+  provider: token_block
+  body:
+    value: '<p>Hi, [current-user:account-name]</p>'
+    format: full_html
+visibility: {  }

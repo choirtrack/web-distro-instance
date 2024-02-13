@@ -1,0 +1,90 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.dashboard.body
+    - node.type.dashboard
+    - views.view.content_recent
+    - views.view.who_s_online
+  module:
+    - layout_builder
+    - layout_discovery
+    - text
+    - token_block
+    - user
+    - views
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: Greeting
+          context_mapping: {  }
+        components:
+          58d07a25-4686-4edf-9691-c0446bf79721:
+            region: content
+            configuration:
+              id: token_block
+              label: 'Token Block'
+              label_display: '0'
+              provider: token_block
+              context_mapping: {  }
+              body:
+                value: '<p>Hi, [current-user:display-name]</p>'
+                format: full_html
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+      -
+        layout_id: layout_threecol_section
+        layout_settings:
+          label: Recents
+          context_mapping: {  }
+          column_widths: 33-34-33
+        components:
+          1b292b92-c227-4f5e-97e7-5b8aff4f7f0e:
+            region: first
+            configuration:
+              id: 'views_block:content_recent-block_1'
+              label: ''
+              label_display: visible
+              provider: views
+              context_mapping: {  }
+              views_label: ''
+              items_per_page: none
+            weight: 0
+            additional: {  }
+          2276bcd2-349d-4fd7-95fb-b2c0b0846eb9:
+            region: second
+            configuration:
+              id: 'views_block:who_s_online-who_s_online_block'
+              label: ''
+              label_display: visible
+              provider: views
+              context_mapping: {  }
+              views_label: ''
+              items_per_page: none
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+id: node.dashboard.default
+targetEntityType: node
+bundle: dashboard
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

@@ -1,6 +1,8 @@
 langcode: en
 status: true
 dependencies:
+  module:
+    - user
   theme:
     - gin
 id: gin_primary_local_tasks
@@ -16,4 +18,11 @@ settings:
   provider: core
   primary: true
   secondary: false
-visibility: {  }
+visibility:
+  user_role:
+    id: user_role
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    roles:
+      administrator: administrator

@@ -23,6 +23,7 @@
         "drupal/gin": "^3.0@RC",
         "drupal/quick_node_clone": "^1.17",
         "drupal/smtp": "^1.2",
+        "drupal/token_block": "^2.0",
         "drush/drush": "^12.4"
     },
     "conflict": {
