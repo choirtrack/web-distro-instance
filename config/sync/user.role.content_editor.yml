@@ -1,0 +1,61 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.article
+    - node.type.page
+    - node.type.set_list
+    - node.type.set_list_other_item
+    - node.type.song
+    - taxonomy.vocabulary.tags
+  module:
+    - comment
+    - contextual
+    - file
+    - node
+    - path
+    - system
+    - taxonomy
+    - toolbar
+    - tour
+    - views_ui
+id: content_editor
+label: 'Content editor'
+weight: 2
+is_admin: false
+permissions:
+  - 'access administration pages'
+  - 'access content overview'
+  - 'access contextual links'
+  - 'access files overview'
+  - 'access toolbar'
+  - 'access tour'
+  - 'administer url aliases'
+  - 'administer views'
+  - 'create article content'
+  - 'create page content'
+  - 'create set_list content'
+  - 'create set_list_other_item content'
+  - 'create song content'
+  - 'create terms in tags'
+  - 'create url aliases'
+  - 'delete article revisions'
+  - 'delete own article content'
+  - 'delete own files'
+  - 'delete own page content'
+  - 'delete own set_list content'
+  - 'delete own song content'
+  - 'delete page revisions'
+  - 'edit any set_list content'
+  - 'edit any set_list_other_item content'
+  - 'edit any song content'
+  - 'edit own article content'
+  - 'edit own comments'
+  - 'edit own page content'
+  - 'edit own set_list content'
+  - 'edit own set_list_other_item content'
+  - 'edit terms in tags'
+  - 'revert all revisions'
+  - 'view all revisions'
+  - 'view own unpublished content'
+  - 'view the administration theme'
