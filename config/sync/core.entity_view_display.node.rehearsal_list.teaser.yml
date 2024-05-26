@@ -1,0 +1,31 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.rehearsal_list.body
+    - field.field.node.rehearsal_list.field_item
+    - node.type.rehearsal_list
+  module:
+    - text
+    - user
+id: node.rehearsal_list.teaser
+targetEntityType: node
+bundle: rehearsal_list
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_item: true
