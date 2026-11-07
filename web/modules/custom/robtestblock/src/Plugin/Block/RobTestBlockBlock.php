@@ -75,7 +75,9 @@ final class RobTestBlockBlock extends BlockBase {
   }
  */
 
-	  $output = \Drupal::service('renderer')->render(views_embed_view('content', 'page_1'));
+    // render() takes its argument by reference, so build the render array first.
+    $view_build = views_embed_view('content', 'page_1');
+    $output = \Drupal::service('renderer')->render($view_build);
 
     /*  
     $block = \Drupal\block\Entity\Block::load ('block_1');

@@ -38,6 +38,8 @@ module:
   quick_node_clone: 0
   robtestblock: 0
   search: 0
+  search_help: 0
+  search_node: 0
   shortcut: 0
   smtp: 0
   standard: 0
@@ -47,7 +49,6 @@ module:
   token: 0
   token_block: 0
   toolbar: 0
-  tour: 0
   update: 0
   user: 0
   views_ui: 0
