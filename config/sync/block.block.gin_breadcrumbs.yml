@@ -1,3 +1,4 @@
+uuid: 78c97fc6-5345-4ed3-b280-031ce9c93fc7
 langcode: en
 status: true
 dependencies:
@@ -17,3 +18,5 @@ settings:
   label_display: '0'
   provider: system
 visibility: {  }
+_core:
+  default_config_hash: y9X3xgCsO59pQyzNLzY1D3SDJJxCHILLWkpPnmuTJ2E

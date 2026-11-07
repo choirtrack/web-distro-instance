@@ -1,10 +1,11 @@
+uuid: e1c35ba7-cd5f-4536-854f-403cf0cefa5b
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.field_rehearsal_list
     - node.type.rehearsal
-    - node.type.rehearsal_list
+    - node.type.rehearsal_week_list
 id: node.rehearsal.field_rehearsal_list
 field_name: field_rehearsal_list
 entity_type: node
@@ -19,10 +20,10 @@ settings:
   handler: 'default:node'
   handler_settings:
     target_bundles:
-      rehearsal_list: rehearsal_list
+      rehearsal_week_list: rehearsal_week_list
     sort:
       field: _none
       direction: ASC
     auto_create: false
-    auto_create_bundle: ''
+    auto_create_bundle: rehearsal_list
 field_type: entity_reference

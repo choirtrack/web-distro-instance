@@ -1,3 +1,4 @@
+uuid: 036f9c2a-1565-4627-a9e7-fa08479ac0e1
 langcode: en
 status: true
 dependencies:
@@ -5,5 +6,6 @@ dependencies:
     - contact
 id: contact_message.token
 label: Token
+description: ''
 targetEntityType: contact_message
 cache: true

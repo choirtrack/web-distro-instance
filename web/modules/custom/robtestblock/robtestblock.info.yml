@@ -1,0 +1,5 @@
+name: 'robtestblock'
+type: module
+description: 'produce a block programmatically'
+package: Custom
+core_version_requirement: ^10 || ^11

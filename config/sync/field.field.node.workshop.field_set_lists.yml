@@ -1,0 +1,31 @@
+uuid: 3fac52bb-b852-4ca7-b34b-3038a5d3b3a5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_set_lists
+    - node.type.rehearsal_week_list
+    - node.type.set_list
+    - node.type.workshop
+id: node.workshop.field_set_lists
+field_name: field_set_lists
+entity_type: node
+bundle: workshop
+label: 'Set Lists'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      rehearsal_week_list: rehearsal_week_list
+      set_list: set_list
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: rehearsal_week_list
+field_type: entity_reference

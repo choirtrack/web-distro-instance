@@ -265,7 +265,9 @@ $databases = [];
  *   $settings['hash_salt'] = file_get_contents('/home/example/salt.txt');
  * @endcode
  */
-$settings['hash_salt'] = 'REDACTED-HASH-SALT';
+// The salt is per-environment and secret: set it in settings.local.php
+// (ddev provides its own in settings.ddev.php).
+$settings['hash_salt'] = '';
 
 /**
  * Deployment identifier.
@@ -886,15 +888,3 @@ elseif (empty($settings['config_sync_directory'])) {
 else {
   $settings['config_sync_directory'] = '../config/sync';
 }
-$databases['default']['default'] = array (
-  'database' => 'dligcchrtrk',
-  'username' => 'uchrtrk',
-  'password' => 'REDACTED-DB-PASSWORD',
-  'prefix' => '',
-  'host' => 'localhost',
-  'port' => '3306',
-  'isolation_level' => 'READ COMMITTED',
-  'namespace' => 'Drupal\\mysql\\Driver\\Database\\mysql',
-  'driver' => 'mysql',
-  'autoload' => 'core/modules/mysql/src/Driver/Database/mysql/',
-);

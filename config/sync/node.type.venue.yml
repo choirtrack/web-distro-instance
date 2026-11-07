@@ -1,3 +1,4 @@
+uuid: c11718e9-a47c-4c6d-9be7-13f7f64f385a
 langcode: en
 status: true
 dependencies:
@@ -10,8 +11,8 @@ third_party_settings:
     parent: 'main:'
 name: Venue
 type: venue
-description: ''
-help: ''
+description: null
+help: null
 new_revision: true
 preview_mode: 1
 display_submitted: true

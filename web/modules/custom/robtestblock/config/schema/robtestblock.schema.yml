@@ -1,0 +1,7 @@
+block.settings.robtestblock_rob_test_block:
+  type: block_settings
+  label: 'rob test block block'
+  mapping:
+    example:
+      type: string
+      label: Example

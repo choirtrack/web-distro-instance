@@ -1,3 +1,6 @@
+_core:
+  default_config_hash: HENvUIeX6xNPGRB1w3z6rT9a71LM_hKXATF6XrM9WvM
+langcode: en
 smtp_on: true
 smtp_host: smtp.gmail.com
 smtp_hostbackup: ''
@@ -11,9 +14,10 @@ smtp_from: ''
 smtp_fromname: ''
 smtp_client_hostname: ''
 smtp_client_helo: ''
-smtp_allowhtml: '0'
-smtp_test_address: ''
+smtp_allowhtml: false
+smtp_test_address: therobyouknow@gmail.com
 smtp_reroute_address: ''
 smtp_debugging: true
 prev_mail_system: php_mail
 smtp_keepalive: false
+smtp_debug_level: 1

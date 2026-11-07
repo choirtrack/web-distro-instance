@@ -1,0 +1,35 @@
+
+Move public files outside of NFS share due to permissions limitation
+
+
+cd /var/
+mkdir -p sites-data/public-files/website
+chown -R www-data sites-data
+chgrp -R www-data sites-data
+cd /var/www/website/docroot/sites/default
+ln -s /var/sites-data/public-files/website files
+
+
+also try:
+
+sudo mkdir -p sites-data/public-files/website
+sudo chown -R www-data sites-data
+sudo chgrp -R www-data sites-data
+
+
+this is better:
+
+cd /var/
+mkdir -p sites-data/public-files/website/files
+cd /var/www/website/docroot/sites/default
+ln -s /var/sites-data/public-files/website/files .
+
+cp -R /var/www/website/docs/devops/public-files-folder/default-assets/sites-data/public-files/website/* /var/sites-data/public-files/website/files
+
+chown -R www-data /var/sites-data/public-files
+chgrp -R www-data /var/sites-data/public-files
+chmod -R g+w /var/sites-data/public-files
+
+sudo chown -R www-data /var/sites-data/public-files
+sudo chgrp -R www-data /var/sites-data/public-files
+sudo chmod -R g+w /var/sites-data/public-files

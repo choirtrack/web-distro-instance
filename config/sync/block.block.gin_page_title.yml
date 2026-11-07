@@ -1,3 +1,4 @@
+uuid: 26eabc8e-b8f5-4314-9bb5-ed18732df3ec
 langcode: en
 status: true
 dependencies:
@@ -15,3 +16,5 @@ settings:
   label_display: '0'
   provider: core
 visibility: {  }
+_core:
+  default_config_hash: HLQY2xgby8K3vN_98hiOSasOhm9pdCsH234-s0duJ8Q

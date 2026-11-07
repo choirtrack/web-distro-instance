@@ -1,3 +1,5 @@
+_core:
+  default_config_hash: R4IF-ClDHXxblLcG0L7MgsLvfBIMAvi_skumNFQwkDc
 module:
   automated_cron: 0
   big_pipe: 0
@@ -22,6 +24,7 @@ module:
   history: 0
   image: 0
   layout_builder: 0
+  layout_builder_expose_all_field_blocks: 0
   layout_discovery: 0
   link: 0
   menu_link_content: 0
@@ -33,7 +36,10 @@ module:
   path: 0
   path_alias: 0
   quick_node_clone: 0
+  robtestblock: 0
   search: 0
+  search_help: 0
+  search_node: 0
   shortcut: 0
   smtp: 0
   standard: 0
@@ -43,7 +49,6 @@ module:
   token: 0
   token_block: 0
   toolbar: 0
-  tour: 0
   update: 0
   user: 0
   views_ui: 0

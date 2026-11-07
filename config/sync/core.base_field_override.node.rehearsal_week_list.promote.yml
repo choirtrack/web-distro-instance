@@ -1,0 +1,22 @@
+uuid: 686d2d8c-623e-4955-9a5c-60ee30f4a7be
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.rehearsal_week_list
+id: node.rehearsal_week_list.promote
+field_name: promote
+entity_type: node
+bundle: rehearsal_week_list
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean
