@@ -265,7 +265,9 @@ $databases = [];
  *   $settings['hash_salt'] = file_get_contents('/home/example/salt.txt');
  * @endcode
  */
-$settings['hash_salt'] = 'QrMm1WblimKDPhk5dY-H0YbZu9Hh93v5zykjlGjEDXH4mW19EaGeUvjfrgSmSkqtNqDInBnA6w';
+// The salt is per-environment and secret: set it in settings.local.php
+// (ddev provides its own in settings.ddev.php).
+$settings['hash_salt'] = '';
 
 /**
  * Deployment identifier.
