@@ -1,16 +1,17 @@
+uuid: a88eb837-771e-46b8-9697-6e785e131269
 langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.rehearsal_list.body
-    - field.field.node.rehearsal_list.field_item
-    - node.type.rehearsal_list
+    - field.field.node.workshop.body
+    - field.field.node.workshop.field_set_lists
+    - node.type.workshop
   module:
     - path
     - text
-id: node.rehearsal_list.default
+id: node.workshop.default
 targetEntityType: node
-bundle: rehearsal_list
+bundle: workshop
 mode: default
 content:
   body:
@@ -29,9 +30,9 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_item:
+  field_set_lists:
     type: entity_reference_autocomplete
-    weight: 121
+    weight: 122
     region: content
     settings:
       match_operator: CONTAINS

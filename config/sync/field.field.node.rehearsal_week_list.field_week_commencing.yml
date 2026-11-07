@@ -1,0 +1,21 @@
+uuid: 7260a3df-2d4b-42b7-bbd3-002e19dcbbec
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_week_commencing
+    - node.type.rehearsal_week_list
+  module:
+    - datetime
+id: node.rehearsal_week_list.field_week_commencing
+field_name: field_week_commencing
+entity_type: node
+bundle: rehearsal_week_list
+label: 'Week commencing'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

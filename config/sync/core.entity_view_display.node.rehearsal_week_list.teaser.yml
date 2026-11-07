@@ -1,0 +1,34 @@
+uuid: 3997f31f-c76f-48d8-a444-7642c78de3d4
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.rehearsal_week_list.body
+    - field.field.node.rehearsal_week_list.field_item
+    - field.field.node.rehearsal_week_list.field_week_commencing
+    - node.type.rehearsal_week_list
+  module:
+    - text
+    - user
+id: node.rehearsal_week_list.teaser
+targetEntityType: node
+bundle: rehearsal_week_list
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_item: true
+  field_week_commencing: true

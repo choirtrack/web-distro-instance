@@ -1,3 +1,4 @@
+uuid: 59db0a4f-470f-4ab0-9555-e769989715b4
 langcode: en
 status: true
 dependencies:
@@ -19,6 +20,8 @@ dependencies:
     - toolbar
     - tour
     - views_ui
+_core:
+  default_config_hash: NtMgnXp0miNtJhag07NSjwdCm4zpJwhlDFs1HgyL4wI
 id: content_editor
 label: 'Content editor'
 weight: 2

@@ -1,15 +1,16 @@
+uuid: 95e1ba81-b510-40d3-8d2d-c10e290af5c3
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.body
-    - node.type.rehearsal_list
+    - node.type.rehearsal_week_list
   module:
     - text
-id: node.rehearsal_list.body
+id: node.rehearsal_week_list.body
 field_name: body
 entity_type: node
-bundle: rehearsal_list
+bundle: rehearsal_week_list
 label: Body
 description: ''
 required: false

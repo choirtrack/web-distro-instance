@@ -1,16 +1,19 @@
+uuid: e3da21f9-2755-4158-9f2d-d4f85fc8e53e
 langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.rehearsal_list.body
-    - field.field.node.rehearsal_list.field_item
-    - node.type.rehearsal_list
+    - field.field.node.rehearsal_week_list.body
+    - field.field.node.rehearsal_week_list.field_item
+    - field.field.node.rehearsal_week_list.field_week_commencing
+    - node.type.rehearsal_week_list
   module:
+    - datetime
     - text
     - user
-id: node.rehearsal_list.default
+id: node.rehearsal_week_list.default
 targetEntityType: node
-bundle: rehearsal_list
+bundle: rehearsal_week_list
 mode: default
 content:
   body:
@@ -27,6 +30,15 @@ content:
       link: true
     third_party_settings: {  }
     weight: 101
+    region: content
+  field_week_commencing:
+    type: datetime_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 102
     region: content
   links:
     settings: {  }

@@ -1,3 +1,4 @@
+uuid: bcc3e0d6-2042-486f-9502-03d3def5f946
 langcode: en
 status: true
 dependencies:
@@ -8,10 +9,10 @@ third_party_settings:
     available_menus:
       - main
     parent: 'main:'
-name: 'Rehearsal List'
-type: rehearsal_list
+name: Workshop
+type: workshop
 description: ''
 help: ''
 new_revision: true
 preview_mode: 1
-display_submitted: true
+display_submitted: false
