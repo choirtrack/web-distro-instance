@@ -1,3 +1,5 @@
+_core:
+  default_config_hash: VDJxTZtQR21qB4lvOq8zszJZLvLKrSPQpdn2E3T71Ww
 langcode: en
 uuid: c38466b4-cb9b-40b9-8861-6d91ad2ec384
 mail: null
@@ -9,5 +11,4 @@ page:
 admin_compact_mode: false
 weight_select_max: 100
 default_langcode: en
-_core:
-  default_config_hash: VDJxTZtQR21qB4lvOq8zszJZLvLKrSPQpdn2E3T71Ww
+mail_notification: null

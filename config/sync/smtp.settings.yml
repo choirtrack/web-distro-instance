@@ -1,3 +1,6 @@
+_core:
+  default_config_hash: HENvUIeX6xNPGRB1w3z6rT9a71LM_hKXATF6XrM9WvM
+langcode: en
 smtp_on: true
 smtp_host: smtp.gmail.com
 smtp_hostbackup: ''
@@ -17,5 +20,3 @@ smtp_reroute_address: ''
 smtp_debugging: true
 prev_mail_system: php_mail
 smtp_keepalive: false
-_core:
-  default_config_hash: HENvUIeX6xNPGRB1w3z6rT9a71LM_hKXATF6XrM9WvM
