@@ -1,3 +1,4 @@
+uuid: dcc99d3e-a8f7-4649-ba57-94ed7b9a3523
 langcode: en
 status: true
 dependencies:
@@ -24,3 +25,5 @@ visibility:
       user: '@user.current_user_context:current_user'
     roles:
       administrator: administrator
+_core:
+  default_config_hash: OQ9aJ-4qVwK1x00o9EOYK4eFDjQr_HLpbPiJaPSVZiQ

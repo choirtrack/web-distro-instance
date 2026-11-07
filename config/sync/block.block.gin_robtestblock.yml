@@ -1,0 +1,21 @@
+uuid: 98494bd0-62e6-481a-ba78-38f82e0e8ca7
+langcode: en
+status: true
+dependencies:
+  module:
+    - robtestblock
+  theme:
+    - gin
+id: gin_robtestblock
+theme: gin
+region: content
+weight: 0
+provider: null
+plugin: robtestblock_rob_test_block
+settings:
+  id: robtestblock_rob_test_block
+  label: 'rob test block'
+  label_display: visible
+  provider: robtestblock
+  example: 'Hello world!'
+visibility: {  }

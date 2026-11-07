@@ -1,3 +1,4 @@
+uuid: 9fda41d9-3f23-44d2-b8b4-aaf1ce9127a0
 langcode: en
 status: true
 dependencies:
@@ -11,6 +12,8 @@ dependencies:
     - search
     - shortcut
     - system
+_core:
+  default_config_hash: cFrlqjtkTfvY3RGccjJkPf1SGIfJ942IrxTLWAO4mgA
 id: authenticated
 label: 'Authenticated user'
 weight: 1

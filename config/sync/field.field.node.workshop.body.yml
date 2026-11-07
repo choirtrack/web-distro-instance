@@ -1,0 +1,24 @@
+uuid: 092efc47-b43e-4373-b9b8-9cb673215f32
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.workshop
+  module:
+    - text
+id: node.workshop.body
+field_name: body
+entity_type: node
+bundle: workshop
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+  allowed_formats: {  }
+field_type: text_with_summary

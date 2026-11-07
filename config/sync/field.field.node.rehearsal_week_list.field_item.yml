@@ -1,14 +1,15 @@
+uuid: 0ee7d109-ffcf-4f7d-afb7-556441377a2d
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.field_item
-    - node.type.rehearsal_list
+    - node.type.rehearsal_week_list
     - node.type.song
-id: node.rehearsal_list.field_item
+id: node.rehearsal_week_list.field_item
 field_name: field_item
 entity_type: node
-bundle: rehearsal_list
+bundle: rehearsal_week_list
 label: Item
 description: ''
 required: false

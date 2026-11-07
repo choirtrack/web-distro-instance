@@ -1,3 +1,4 @@
+uuid: 990965da-9e77-4bad-96f2-4092ddadd7da
 langcode: en
 status: true
 dependencies:
@@ -5,6 +6,8 @@ dependencies:
     - system
   theme:
     - claro
+_core:
+  default_config_hash: '-Ac3ISpIT0PQ-whzD7_dw0SdKi6dAbRFNWdSjOiVDqg'
 id: claro_messages
 theme: claro
 region: highlighted

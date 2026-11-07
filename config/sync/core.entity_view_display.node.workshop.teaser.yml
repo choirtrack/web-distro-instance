@@ -1,17 +1,18 @@
+uuid: 8177e446-ee06-4d10-8846-e0a3a6f3c283
 langcode: en
 status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
-    - field.field.node.rehearsal_list.body
-    - field.field.node.rehearsal_list.field_item
-    - node.type.rehearsal_list
+    - field.field.node.workshop.body
+    - field.field.node.workshop.field_set_lists
+    - node.type.workshop
   module:
     - text
     - user
-id: node.rehearsal_list.teaser
+id: node.workshop.teaser
 targetEntityType: node
-bundle: rehearsal_list
+bundle: workshop
 mode: teaser
 content:
   body:
@@ -28,4 +29,4 @@ content:
     weight: 100
     region: content
 hidden:
-  field_item: true
+  field_set_lists: true

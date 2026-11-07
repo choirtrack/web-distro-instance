@@ -1,11 +1,12 @@
+uuid: c16188ae-9ded-4c2d-9254-ea72e695bd97
 langcode: en
 status: true
 dependencies:
   config:
     - field.field.node.dashboard.body
     - node.type.dashboard
-    - views.view.content_recent
-    - views.view.who_s_online
+    - views.view.current_rehearsal_week
+    - views.view.songs_covered
   module:
     - layout_builder
     - layout_discovery
@@ -25,6 +26,7 @@ third_party_settings:
           context_mapping: {  }
         components:
           58d07a25-4686-4edf-9691-c0446bf79721:
+            uuid: 58d07a25-4686-4edf-9691-c0446bf79721
             region: content
             configuration:
               id: token_block
@@ -37,6 +39,32 @@ third_party_settings:
                 format: full_html
             weight: 0
             additional: {  }
+          a6f4d075-7372-43ae-ac9c-8ff1f398b171:
+            uuid: a6f4d075-7372-43ae-ac9c-8ff1f398b171
+            region: content
+            configuration:
+              id: 'views_block:current_rehearsal_week-block_1'
+              label: ''
+              label_display: visible
+              provider: views
+              context_mapping: {  }
+              views_label: ''
+              items_per_page: none
+            weight: 1
+            additional: {  }
+          784e1386-a6ee-4283-8611-8b5e911f4198:
+            uuid: 784e1386-a6ee-4283-8611-8b5e911f4198
+            region: content
+            configuration:
+              id: 'views_block:songs_covered-block_1'
+              label: ''
+              label_display: visible
+              provider: views
+              context_mapping: {  }
+              views_label: ''
+              items_per_page: none
+            weight: 2
+            additional: {  }
         third_party_settings: {  }
       -
         layout_id: layout_threecol_section
@@ -44,31 +72,7 @@ third_party_settings:
           label: Recents
           context_mapping: {  }
           column_widths: 33-34-33
-        components:
-          1b292b92-c227-4f5e-97e7-5b8aff4f7f0e:
-            region: first
-            configuration:
-              id: 'views_block:content_recent-block_1'
-              label: ''
-              label_display: visible
-              provider: views
-              context_mapping: {  }
-              views_label: ''
-              items_per_page: none
-            weight: 0
-            additional: {  }
-          2276bcd2-349d-4fd7-95fb-b2c0b0846eb9:
-            region: second
-            configuration:
-              id: 'views_block:who_s_online-who_s_online_block'
-              label: ''
-              label_display: visible
-              provider: views
-              context_mapping: {  }
-              views_label: ''
-              items_per_page: none
-            weight: 0
-            additional: {  }
+        components: {  }
         third_party_settings: {  }
 id: node.dashboard.default
 targetEntityType: node

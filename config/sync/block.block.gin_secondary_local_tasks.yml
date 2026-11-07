@@ -1,3 +1,4 @@
+uuid: b8037713-46c7-47a0-821d-a92539c13e1c
 langcode: en
 status: true
 dependencies:
@@ -17,3 +18,5 @@ settings:
   primary: false
   secondary: true
 visibility: {  }
+_core:
+  default_config_hash: BCWhood0xXFQYqxFgL1spXdb9KeIuXH1YvTdjIEedDg

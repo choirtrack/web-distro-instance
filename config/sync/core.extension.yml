@@ -1,3 +1,5 @@
+_core:
+  default_config_hash: R4IF-ClDHXxblLcG0L7MgsLvfBIMAvi_skumNFQwkDc
 module:
   automated_cron: 0
   big_pipe: 0
@@ -33,6 +35,7 @@ module:
   path: 0
   path_alias: 0
   quick_node_clone: 0
+  robtestblock: 0
   search: 0
   shortcut: 0
   smtp: 0
