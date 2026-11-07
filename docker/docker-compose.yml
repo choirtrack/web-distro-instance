@@ -1,0 +1,32 @@
+
+# connect up server with app
+# - give server access to filesystem in php container
+
+version: '3'
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        - DEBUG=TRUE
+        - ENVIRONMENT=LOCAL
+    volumes:
+      - ./:/var/www/html:cached
+    env_file:
+      - ./local.env
+    ports:
+      - "8888:443"
+  db:
+    image: mysql:5.7
+    command: mysqld --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci
+    volumes:
+      - ./docker/provision/mysql/init:/docker-entrypoint-initdb.d/:ro
+    env_file:
+      - ./local.env
+    ports:
+      - "3306:3306"
+  deploy:
+  secrets:
+  server:
+  storage:  
