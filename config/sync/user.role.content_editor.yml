@@ -19,7 +19,6 @@ dependencies:
     - system
     - taxonomy
     - toolbar
-    - tour
     - views_ui
 _core:
   default_config_hash: NtMgnXp0miNtJhag07NSjwdCm4zpJwhlDFs1HgyL4wI
@@ -34,7 +33,6 @@ permissions:
   - 'access files overview'
   - 'access help pages'
   - 'access toolbar'
-  - 'access tour'
   - 'administer url aliases'
   - 'administer views'
   - 'create article content'

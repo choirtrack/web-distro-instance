@@ -1,0 +1,22 @@
+uuid: 81903ba0-99ef-4b02-ba0f-4695bcbf4c9a
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.set_list_other_item
+id: node.set_list_other_item.promote
+field_name: promote
+entity_type: node
+bundle: set_list_other_item
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

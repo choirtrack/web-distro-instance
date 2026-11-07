@@ -1,0 +1,22 @@
+uuid: 50793989-679b-4e85-a96a-0dd6b0b97d49
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.rehearsal
+id: node.rehearsal.promote
+field_name: promote
+entity_type: node
+bundle: rehearsal
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean
