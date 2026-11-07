@@ -16,8 +16,12 @@ Site structure, database `dligcchoirtrack_1`, `settings/1/settings.local.php`
 (copied from server02 with new database credentials and a new hash salt), the
 Apache vhost `ligc.choirtrack.net.conf` with the Let's Encrypt certificate
 copied from server02, and a `drush cron` crontab entry every 30 minutes.
-Release 1.0.0 = branch `feat/drupal-11-server04` (Drupal 11.4.12) with the
-server02 database restored into it and `drush updb` + `cim` run.
+Release 1.0.0 = branch `feat/drupal-11-server04` (Drupal 11.4.12). The database
+is the server02 dump of 2026-11-07 upgraded in ddev (10.1.7 → 10.6.21, Tour
+uninstalled while it still existed, → 11.4.12) and then restored on server04;
+restoring the raw Drupal 10 dump into the Drupal 11 code fails in
+`search_update_11401` because core 11 no longer ships Tour. Both dumps are
+kept in `backups/database/` on the server.
 
 ## Releasing a new version
 
