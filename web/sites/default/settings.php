@@ -886,15 +886,3 @@ elseif (empty($settings['config_sync_directory'])) {
 else {
   $settings['config_sync_directory'] = '../config/sync';
 }
-$databases['default']['default'] = array (
-  'database' => 'dligcchrtrk',
-  'username' => 'uchrtrk',
-  'password' => 'REDACTED-DB-PASSWORD',
-  'prefix' => '',
-  'host' => 'localhost',
-  'port' => '3306',
-  'isolation_level' => 'READ COMMITTED',
-  'namespace' => 'Drupal\\mysql\\Driver\\Database\\mysql',
-  'driver' => 'mysql',
-  'autoload' => 'core/modules/mysql/src/Driver/Database/mysql/',
-);
