@@ -12,3 +12,10 @@ Then:
  
 `git add .` 
 `git commit -m "config"`
+
+---
+
+**Note (2026-11-07):** this recipe is for a future install profile's
+`config/install` directory, where uuids must not be present. `config/sync` in
+this repository is a normal `drush cex` of the running instance and keeps its
+uuids, because `drush cim` needs them to update existing configuration.
