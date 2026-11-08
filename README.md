@@ -10,13 +10,18 @@ is https://ligc.choirtrack.net.
 | Remote   | URL                                                   | Branch          |
 |----------|-------------------------------------------------------|-----------------|
 | `origin` | git@github.com:choirtrack/web-distro-instance.git     | `main` (issues, PRs) |
-| `drupal` | git@git.drupal.org:project/choirtrack.git             | `1.0.x` (drupal.org project) |
+| `drupal` | git@git.drupal.org:project/choirtrack.git             | `2.0.x` (drupal.org release branch) |
 
 Develop against `origin`; after merging to `main`, mirror it to drupal.org:
 
 ```sh
-git push drupal main:1.0.x
+git push drupal main:2.0.x
 ```
+
+The drupal.org release branch is `2.0.x` (Drupal 11). The earlier `1.0.x` branch holds the
+pre-rewrite Drupal 10 history and is being retired; its removal was requested from the
+Drupal.org webmasters because a branch with a dev release cannot be force-pushed or deleted
+by maintainers.
 
 The drupal.org history (two 2024 commits) was merged into this repository on
 2026-11-07, so both remotes share one history from then on.

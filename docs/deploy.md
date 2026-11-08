@@ -29,7 +29,7 @@ kept in `backups/database/` on the server.
 # local: merge to main, tag, push both remotes
 git tag -a v1.0.1 -m "1.0.1"
 git push origin main --tags
-git push drupal main:1.0.x --tags
+git push drupal main:2.0.x --tags
 
 # server: clone the tag into a new release, link settings and files, deploy
 ssh server04
